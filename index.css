@@ -3,8 +3,9 @@ html {
     /*margin: 0;
     padding: 0;*/
     pointer-events: auto;
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
+
 /*************** Media queries *************/
 
 @media screen and (max-width: 400px) {
@@ -59,7 +60,7 @@ header {
 }
 
 .main {
-    height:10px;
+    height: 10px;
 }
 
 .album-container {
@@ -121,17 +122,6 @@ header {
     opacity: 1 !important;
 }
 
-.menu {
-    outline: red 1px solid;
-    position: fixed;
-    top: 4vw;
-    right: 4vw;
-    width: 3rem;
-    height: 3rem;
-    padding: 1rem;
-    overflow: visible;
-}
-
 .menu2 {
     outline: red 1px solid;
     position: fixed;
@@ -151,9 +141,6 @@ header {
     transform: rotate(-45deg) translateY(-0.375rem) translateX(-1.625rem);
 }
 
-.button {
-    filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.1));
-}
 
 .chevron {
     position: fixed;
@@ -168,33 +155,35 @@ Animation stuff
  =====================*/
 
 
-#menu-icon:hover rect:nth-child(1) {
+#menu-icon.menu:hover rect:nth-child(1) {
     fill: #4b4b4b;
     transform: translateY(-0.2rem) rotate(5deg);
 }
-#menu-icon:hover rect:nth-child(2) {
+
+#menu-icon.menu:hover rect:nth-child(2) {
     fill: #4b4b4b;
     transform: translateY(0.2rem) translateX(-0.25rem) rotate(-5deg);
 }
-#menu-icon:active{
+
+#menu-icon.menu:active {
     opacity: 0.5;
 }
-
-.animation1 {
-    opacity: 0;
-    transition: opacity ease 0.4s;
-}
-
-.animation2 {
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer;
-    transition: opacity ease 0.4s;
+#menu-icon.menu {
+    transition: 0.7s ease;
 }
 
 #menu-icon {
     cursor: pointer;
-    transition: 0.4s ease;
+    filter: drop-shadow(3px 10px 5px rgba(0, 0, 0, 0.1));
+    /*outline: red 1px solid;*/
+    position: fixed;
+    top: 4vw;
+    right: 4vw;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    overflow: visible;
+
 }
 
 #menu-icon rect {
@@ -202,12 +191,27 @@ Animation stuff
     transform-origin: left top;
 }
 
-#menu-icon.animate rect:nth-child(1) {
+#menu-icon.cross rect:nth-child(1) {
     width: 3.25rem;
     transform: rotate(45deg) translateY(-0.5rem) translateX(0.5rem);
 }
 
-#menu-icon.animate rect:nth-child(2) {
+#menu-icon.cross rect:nth-child(2) {
     width: 3.25rem;
     transform: rotate(-45deg) translateY(-0.375rem) translateX(-1.625rem);
+}
+
+#menu-icon.go-to-top {
+    top: 85vh;
+    transition: 0.7s cubic-bezier(.61,.11,.75,1.07);
+
+}
+
+#menu-icon.go-to-top rect:nth-child(1) {
+    transform: rotate(45deg) translateY(-1rem) translateX(1.125rem);
+
+}
+
+#menu-icon.go-to-top rect:nth-child(2) {
+    transform: rotate(-45deg) translateY(-.875rem) translateX(-2.0rem);
 }

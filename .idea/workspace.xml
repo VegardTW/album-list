@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="bunnmargin random-pos.js funker">
+    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="bunnmargin random-pos.js funker x2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/buttons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random-pos.js" beforeDir="false" afterPath="$PROJECT_DIR$/random-pos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scroll-detection-v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/scroll-detection-v2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,7 +76,7 @@
       <workItem from="1677601583159" duration="184000" />
       <workItem from="1677601775919" duration="111000" />
       <workItem from="1677605945197" duration="1009000" />
-      <workItem from="1677857645392" duration="16633000" />
+      <workItem from="1677857645392" duration="24812000" />
     </task>
     <task id="LOCAL-00001" summary="Oppdatert responsivitet, ting funker.">
       <created>1677870754069</created>
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677875869084</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bunnmargin random-pos.js funker x2">
+      <created>1677876949645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677876949645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Oppdatert responsivitet, ting funker." />
     <MESSAGE value="bunnmargin random-pos.js funker" />
-    <option name="LAST_COMMIT_MESSAGE" value="bunnmargin random-pos.js funker" />
+    <MESSAGE value="bunnmargin random-pos.js funker x2" />
+    <option name="LAST_COMMIT_MESSAGE" value="bunnmargin random-pos.js funker x2" />
   </component>
 </project>

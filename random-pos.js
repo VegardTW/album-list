@@ -7,6 +7,7 @@ function random() {
 }
 
 const albums = document.querySelectorAll('.album');
+const mainElement = document.getElementById("main");
 
 enquire.register("screen and (min-width:1000px)", {
     match: function () {
@@ -41,6 +42,7 @@ enquire.register("screen and (min-width:1000px)", {
             album.style.top = `${parseInt(album.style.top || 30) + y}px`;
             album.style.zIndex = `${parseInt(album.style.zIndex || 0) + z}`;
         })
+
         let largestTopValue = -Infinity;
         albums.forEach((album) => {
             const topValue = parseInt(album.style.top);
@@ -48,12 +50,8 @@ enquire.register("screen and (min-width:1000px)", {
                 largestTopValue = topValue;
             }
         });
-       /* const newHeightValue = largestTopValue + 200;
-        console.log(largestTopValue)
-
-        const mainElement = document.querySelectorAll(".main");
-        console.log(newHeightValue)
-        mainElement.style.height = newHeightValue + "px";*/
+        const newHeightValue = largestTopValue + 600;
+        mainElement.style.height = newHeightValue + "px";
 
     }
 })

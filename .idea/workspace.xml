@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="Oppdatert responsivitet, ting funker.">
+    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="bunnmargin random-pos.js funker">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/random-pos.js" beforeDir="false" afterPath="$PROJECT_DIR$/random-pos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
       <workItem from="1677601583159" duration="184000" />
       <workItem from="1677601775919" duration="111000" />
       <workItem from="1677605945197" duration="1009000" />
-      <workItem from="1677857645392" duration="15582000" />
+      <workItem from="1677857645392" duration="16633000" />
     </task>
     <task id="LOCAL-00001" summary="Oppdatert responsivitet, ting funker.">
       <created>1677870754069</created>
@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677870754069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bunnmargin random-pos.js funker">
+      <created>1677875869084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677875869084</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Oppdatert responsivitet, ting funker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert responsivitet, ting funker." />
+    <MESSAGE value="bunnmargin random-pos.js funker" />
+    <option name="LAST_COMMIT_MESSAGE" value="bunnmargin random-pos.js funker" />
   </component>
 </project>

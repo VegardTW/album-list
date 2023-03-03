@@ -52,7 +52,6 @@ enquire.register("screen and (min-width:1000px)", {
         });
         const newHeightValue = largestTopValue + 600;
         mainElement.style.height = newHeightValue + "px";
-
     }
 })
 
@@ -89,5 +88,15 @@ enquire.register("screen and (max-width:1000px)", {
             album.style.top = `${parseInt(album.style.top || 30) + y}vw`;
             album.style.zIndex = `${parseInt(album.style.zIndex || 0) + z}`;
         })
+        let largestTopValue = -Infinity;
+        albums.forEach((album) => {
+            const topValue = parseInt(album.style.top);
+            if (topValue > largestTopValue) {
+                largestTopValue = topValue;
+            }
+            console.log(largestTopValue);
+        });
+        const newHeightValue = largestTopValue + 70;
+        mainElement.style.height = newHeightValue + "vw";
     }
 });

@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="alle knapper og submeny funker">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random-pos.js" beforeDir="false" afterPath="$PROJECT_DIR$/random-pos.js" afterDir="false" />
-    </list>
+    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="la til funksjon shuffleAlbums og fjernet parseInt fra random-pos.js" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +71,7 @@
       <workItem from="1677601775919" duration="111000" />
       <workItem from="1677605945197" duration="1009000" />
       <workItem from="1677857645392" duration="24885000" />
-      <workItem from="1677928175003" duration="8949000" />
+      <workItem from="1677928175003" duration="9785000" />
     </task>
     <task id="LOCAL-00001" summary="Oppdatert responsivitet, ting funker.">
       <created>1677870754069</created>
@@ -113,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677934975232</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="la til funksjon shuffleAlbums og fjernet parseInt fra random-pos.js">
+      <created>1677937504852</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677937504852</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +144,7 @@
     <MESSAGE value="bunnmargin random-pos.js funker x2" />
     <MESSAGE value="alle button-states fungerer" />
     <MESSAGE value="alle knapper og submeny funker" />
-    <option name="LAST_COMMIT_MESSAGE" value="alle knapper og submeny funker" />
+    <MESSAGE value="la til funksjon shuffleAlbums og fjernet parseInt fra random-pos.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="la til funksjon shuffleAlbums og fjernet parseInt fra random-pos.js" />
   </component>
 </project>

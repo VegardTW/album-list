@@ -8,7 +8,8 @@ const openMenu = document.getElementById("refresh");
 //     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
 function reload() {
-    location.reload()
+    shuffleAlbums()
+    // location.reload()
 }
 
 function allButtons() {

@@ -1,6 +1,7 @@
 document.getElementById("go-to-top");
 document.getElementById("refresh");
 const button = document.getElementById("menu-icon");
+const openMenu = document.getElementById("refresh");
 
 // function buttons() {
 //     document.body.scrollTop = 0; // For Safari
@@ -17,8 +18,12 @@ function allButtons() {
     } else if (button.classList.contains("menu")) {
         button.classList.toggle("menu")
         button.classList.toggle("cross")
+        openMenu.classList.toggle("open-menu")
+        openMenu.classList.toggle("closed-menu")
     } else if (button.classList.contains("cross")) {
         button.classList.toggle("menu")
         button.classList.toggle("cross")
+        openMenu.classList.toggle("open-menu")
+        openMenu.classList.toggle("closed-menu")
     }
 }

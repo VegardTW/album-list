@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="bunnmargin random-pos.js funker x2">
+    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="alle button-states fungerer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/buttons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
@@ -39,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/git-repositories/album-list",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/git-repositories/album-list&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="enquire.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/enquire.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -76,7 +76,8 @@
       <workItem from="1677601583159" duration="184000" />
       <workItem from="1677601775919" duration="111000" />
       <workItem from="1677605945197" duration="1009000" />
-      <workItem from="1677857645392" duration="24812000" />
+      <workItem from="1677857645392" duration="24885000" />
+      <workItem from="1677928175003" duration="6625000" />
     </task>
     <task id="LOCAL-00001" summary="Oppdatert responsivitet, ting funker.">
       <created>1677870754069</created>
@@ -99,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677876949645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="alle button-states fungerer">
+      <created>1677885142053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677885142053</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +134,7 @@
     <MESSAGE value="Oppdatert responsivitet, ting funker." />
     <MESSAGE value="bunnmargin random-pos.js funker" />
     <MESSAGE value="bunnmargin random-pos.js funker x2" />
-    <option name="LAST_COMMIT_MESSAGE" value="bunnmargin random-pos.js funker x2" />
+    <MESSAGE value="alle button-states fungerer" />
+    <option name="LAST_COMMIT_MESSAGE" value="alle button-states fungerer" />
   </component>
 </project>

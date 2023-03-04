@@ -1,7 +1,8 @@
 document.getElementById("go-to-top");
-document.getElementById("refresh");
+// document.getElementById("refresh");
 const button = document.getElementById("menu-icon");
-const openMenu = document.getElementById("refresh");
+const openRefresh = document.getElementById("refresh");
+const openFilters = document.getElementById("filters");
 
 // function buttons() {
 //     document.body.scrollTop = 0; // For Safari
@@ -19,12 +20,17 @@ function allButtons() {
     } else if (button.classList.contains("menu")) {
         button.classList.toggle("menu")
         button.classList.toggle("cross")
-        openMenu.classList.toggle("open-menu")
-        openMenu.classList.toggle("closed-menu")
+        expandMenu()
     } else if (button.classList.contains("cross")) {
         button.classList.toggle("menu")
         button.classList.toggle("cross")
-        openMenu.classList.toggle("open-menu")
-        openMenu.classList.toggle("closed-menu")
+        expandMenu()
     }
+}
+
+function expandMenu() {
+    openRefresh.classList.toggle("open-menu")
+    openRefresh.classList.toggle("closed-menu")
+    openFilters.classList.toggle("open-menu")
+    openFilters.classList.toggle("closed-menu")
 }

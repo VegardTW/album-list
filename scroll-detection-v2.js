@@ -6,8 +6,10 @@ window.addEventListener('scroll', function () {
         element.classList.toggle("go-to-top")
         element.classList.remove("menu")
         element.classList.remove("cross")
-        openMenu.classList.remove("open-menu")
-        openMenu.classList.add("closed-menu")
+        openRefresh.classList.remove("open-menu")
+        openFilters.classList.remove("open-menu")
+        openRefresh.classList.add("closed-menu")
+        openFilters.classList.add("closed-menu")
      } else if (window.scrollY < 180 && isScrollTop !== true) {
         isScrollTop = true
         element.classList.toggle("go-to-top")

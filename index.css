@@ -114,6 +114,9 @@ header {
 /*=====================
 Button/Animation stuff
  =====================*/
+.hidden {
+    display: none;
+}
 
 #menu-icon {
     cursor: pointer;
@@ -136,6 +139,9 @@ Button/Animation stuff
 
 #menu-icon.menu {
     transition: 0.7s ease;
+}
+.button{
+    cursor: pointer;
 }
 .button:hover {
     fill: #d21d1d;
@@ -191,7 +197,6 @@ Button/Animation stuff
 }
 /**************** pop-out menu *****************/
 /* refresh */
-
 .refresh {
     position: fixed;
     top: 4vw;
@@ -209,11 +214,11 @@ Button/Animation stuff
 }
 
 .refresh.open-menu {
-    animation: 0.6s ease alternate open-menu;
+    animation: 0.6s ease forwards open-refresh;
     animation-fill-mode: forwards;
 }
 
-@keyframes open-menu {
+@keyframes open-refresh {
     0% {
         opacity: 0;
     }
@@ -221,7 +226,7 @@ Button/Animation stuff
         opacity: 0.1;
     }
     100% {
-        transform: translateX(-5rem);
+        transform: translateX(-12rem);
         opacity: 1;
         cursor: pointer;
         pointer-events: auto;
@@ -229,14 +234,14 @@ Button/Animation stuff
 }
 
 .refresh.closed-menu {
-    animation: 0.6s ease forwards closed-menu;
+    animation: 0.6s ease forwards close-refresh;
     animation-fill-mode: forwards;
 }
 
-@keyframes closed-menu {
+@keyframes close-refresh {
     0% {
         opacity: 1;
-        transform: translateX(-5rem);
+        transform: translateX(-12rem);
         cursor: pointer;
         pointer-events: auto;
     }
@@ -247,6 +252,63 @@ Button/Animation stuff
         opacity: 0;
     }
 }
+
+.filters{
+    position: fixed;
+    top: 4vw;
+    right: 4vw;
+    font-size: 1.45rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: none;
+    pointer-events: none;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 1.6rem 0 0 0;
+    opacity: 0;
+    transition: 0.4s ease;
+    will-change: opacity, transform;
+}
+
+.filters.open-menu {
+    animation: 0.6s ease forwards open-filters;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open-filters {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateX(-6rem);
+        opacity: 1;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}
+
+.filters.closed-menu {
+    animation: 0.6s ease forwards close-filters;
+    animation-fill-mode: forwards;
+}
+
+@keyframes close-filters {
+    0% {
+        opacity: 1;
+        transform: translateX(-6rem);
+        cursor: pointer;
+        pointer-events: auto;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* funker ikke av en eller annen grunn */
 /*#refresh:hover {*/
 /*    transform-origin: center center;*/

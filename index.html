@@ -8,8 +8,25 @@
 </head>
 <body>
 <header>
-    <label class="button filters closed-menu" id="filters"><input type="checkbox" onclick="filterMetal()"><span>Metal</span></label>
-    <a class="button refresh closed-menu" onclick="reload()" id="refresh" title="refresh page">Refresh</a>
+    <label class="button filters closed-menu" id="filters" onclick="toggleUnderline()" title="View filters">
+        Filters
+    </label>
+    <label class="button filter-list" id="metal">
+        Metal
+        <input id="metal-cb" class="checkbox" type="checkbox" checked="checked"> <!-- checked funker ikke i kombinasjon med onclick av en eller annen grunn -->
+        <span class="checkmark"></span>
+    </label>
+    <label class="button filter-list" id="jazz">
+        Jazz
+        <input id="jazz-cb" class="checkbox" type="checkbox" checked="checked"> <!-- checked funker ikke i kombinasjon med onclick av en eller annen grunn -->
+        <span class="checkmark"></span>
+    </label>
+    <label class="button filter-list" id="rock">
+        Rock
+        <input id="rock-cb" class="checkbox" type="checkbox" checked="checked"> <!-- checked funker ikke i kombinasjon med onclick av en eller annen grunn -->
+        <span class="checkmark"></span>
+    </label>
+    <a class="button refresh closed-menu" onclick="reload()" id="refresh" title="Refresh page">Refresh</a>
     <svg onclick="allButtons()" class="button menu" id="menu-icon">
         <rect width="3rem" height="1rem"></rect>
         <rect y="2rem" width="3rem" height="1rem"></rect>
@@ -18,7 +35,7 @@
 </header>
 <div class="main" id="main">
     <div class="album-container">
-        <div class="album filter metal" id="foabp">
+        <div class="album filter metal jazz" id="foabp">
             <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27355b72bf2e20270860cce6634"
                  alt="cover art for Fear of a Blank Planet by Porcupine Tree">
             <div class="album-info">
@@ -62,7 +79,7 @@
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album filter jazz" id="aph">
+        <div class="album filter rock" id="aph">
             <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2734818f6eb5e785c2f543cf774"
                  alt="album cover for Aphelion by Leprous">
             <div class="album-info">
@@ -154,6 +171,7 @@
     </div>
 </div>
 <div class="bottom-padding"></div>
+<!--DOESNT DO SHIT <script src="force-reset-checkboxes.js"></script>-->
 <script src="enquire.js"></script>
 <script src="drag-on-hold.js"></script>
 <!--<script src="scroll-detection.js"></script>-->

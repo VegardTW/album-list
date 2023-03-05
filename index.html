@@ -8,139 +8,162 @@
 </head>
 <body>
 <header>
-    <a class="refresh" onclick="reload()" id="refresh" title="refresh page">Refresh</a>
-    <!--<a>
-        <svg class="menu2 button2">
-            <rect class="recta1" width="3rem" height="1rem" style="fill: black"></rect>
-            <rect class="recta2" y="2rem" width="3rem" height="1rem" style="fill: black"></rect>
-        </svg>
-    </a>-->
-    <a title="test">
-        <svg onclick="goToX()" class="menu button" id="menu-icon">
-            <rect width="3rem" height="1rem"></rect>
-            <rect y="2rem" width="3rem" height="1rem"></rect>
-        </svg>
-    </a>
-   <!-- <a>
-        <svg class="menu button" onclick="goToX()" id="go-to-x" title="Open menu">>
-            <rect class="rect1" width="3rem" height="1rem" style="fill: black"></rect>
-            <rect class="rect2" y="2rem" width="3rem" height="1rem" style="fill: black"></rect>
-        </svg>
-    </a> -->
-    <a class="chevron-anchor" onclick="buttons()" id="go-to-top" title="go to top">
-        <svg class="chevron button" width="4.25rem" height="2.85rem">
-            <rect transform="rotate(45)" x="1.5rem" y="-1.5rem" width="3rem" height="1rem" style="fill: black"></rect>
-            <rect transform="rotate(-45)" x="-1.5rem" y="1.5rem" width="3rem" height="1rem" style="fill: black"></rect>
-        </svg>
-    </a>
+    <label class="button filters closed-menu" id="filters" onclick="toggleUnderline()" title="View filters">
+        Filters
+    </label>
+    <label class="button filter-list" id="metal">
+        Metal
+        <input id="metal-cb" class="checkbox" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="button filter-list" id="jazz">
+        Jazz
+        <input id="jazz-cb" class="checkbox" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <label class="button filter-list" id="rock">
+        Rock
+        <input id="rock-cb" class="checkbox" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+    <a class="button refresh closed-menu" onclick="reload()" id="refresh" title="Refresh page">Refresh</a>
+    <svg onclick="allButtons()" class="button menu" id="menu-icon">
+        <rect width="3rem" height="1rem"></rect>
+        <rect y="2rem" width="3rem" height="1rem"></rect>
+    </svg>
+
 </header>
-<div class="main">
+<div class="main" id="main">
     <div class="album-container">
-        <div class="album" id="foabp">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27355b72bf2e20270860cce6634" alt="cover art for Fear of a Blank Planet by Porcupine Tree">
+        <div class="album filter metal jazz" id="foabp">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27355b72bf2e20270860cce6634"
+                 alt="cover art for Fear of a Blank Planet by Porcupine Tree">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Fear of a Blank Planet</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="bwp">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273f32111c6eea621e6468dccbc" alt="album cover for Blackwater Park by Opeth">
+        <div class="album filter metal" id="bwp">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273f32111c6eea621e6468dccbc"
+                 alt="album cover for Blackwater Park by Opeth">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Blackwater Park</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="sots">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b19e45af5bea336820fe1bf3" alt="album cover for Shadows of the Sun by Ulver">
+        <div class="album filter metal" id="sots">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b19e45af5bea336820fe1bf3"
+                 alt="album cover for Shadows of the Sun by Ulver">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Shadows of the Sun</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="aja">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b0a4a1d7f138cbbcf252bf7b" alt="album cover for Aja by Steely Dan">
+        <div class="album filter jazz" id="aja">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b0a4a1d7f138cbbcf252bf7b"
+                 alt="album cover for Aja by Steely Dan">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Aja</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="aph">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2734818f6eb5e785c2f543cf774" alt="album cover for Aphelion by Leprous">
+        <div class="album filter rock" id="aph">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2734818f6eb5e785c2f543cf774"
+                 alt="album cover for Aphelion by Leprous">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Aphelion</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="tpwbyt">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273df53d85e2252e6ce67cba99f" alt="album cover for This Place Will Become Your Tomb by Sleep Token">
+        <div class="album filter jazz" id="tpwbyt">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273df53d85e2252e6ce67cba99f"
+                 alt="album cover for This Place Will Become Your Tomb by Sleep Token">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">This Place Will Become Your Tomb</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="tmbte">
+        <div class="album filter jazz" id="tmbte">
             <img class="album-cover"
-                 src="https://townsquare.media/site/366/files/2023/02/attachment-sleep_token_take_me_back_to_eden.jpg?w=1080&q=75" alt="album cover for Take Me Back to Eden by Sleep Token">
+                 src="https://townsquare.media/site/366/files/2023/02/attachment-sleep_token_take_me_back_to_eden.jpg?w=1080&q=75"
+                 alt="album cover for Take Me Back to Eden by Sleep Token">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Take Me Back to Eden</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="iab">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273cdaddbe366580d699aefbf84" alt="album cover for In Absentia by Porcupine Tree">
+        <div class="album filter jazz" id="iab">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273cdaddbe366580d699aefbf84"
+                 alt="album cover for In Absentia by Porcupine Tree">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">In Absentia</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="aen">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273dce45359981d62e087a29e6f" alt="album cover for Ænima by Tool">
+        <div class="album filter jazz" id="aen">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273dce45359981d62e087a29e6f"
+                 alt="album cover for Ænima by Tool">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Ænima</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="stl">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2736d4ab9bf3bdea52371415ad6" alt="album cover for Still Life by Opeth">
+        <div class="album filter jazz" id="stl">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2736d4ab9bf3bdea52371415ad6"
+                 alt="album cover for Still Life by Opeth">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Still Life</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="tgcd">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27394642242efbaaeb167587498" alt="album cover for The Great Cold Distance by Katatonia">
+        <div class="album filter jazz" id="tgcd">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27394642242efbaaeb167587498"
+                 alt="album cover for The Great Cold Distance by Katatonia">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">The Great Cold Distance</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
         </div>
-        <div class="album" id="cla">
-            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27341ae9b691f3c18957c8fcdb1" alt="album cover for Clayman by In Flames">
+        <div class="album filter jazz" id="cla">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27341ae9b691f3c18957c8fcdb1"
+                 alt="album cover for Clayman by In Flames">
             <div class="album-info">
                 <a href="https://open.spotify.com/" class="spotify-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="spotify logo"></a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
                 <h2 class="album-title">Clayman</h2>
                 <p class="album-description">Lorem ipsum dolor sit amet</p>
             </div>
@@ -148,6 +171,7 @@
     </div>
 </div>
 <div class="bottom-padding"></div>
+<!--DOESNT DO SHIT <script src="force-reset-checkboxes.js"></script>-->
 <script src="enquire.js"></script>
 <script src="drag-on-hold.js"></script>
 <!--<script src="scroll-detection.js"></script>-->
@@ -158,6 +182,7 @@
 <script src="random-pos.js"></script>
 <script src="buttons.js"></script>
 <script src="scroll-detection-v2.js"></script>
+<script src="filtering.js"></script>
 
 </body>
 </html>

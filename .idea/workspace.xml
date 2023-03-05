@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="more shit works">
-      <change afterPath="$PROJECT_DIR$/force-reset-checkboxes.js" afterDir="false" />
+    <list default="true" id="993fbe99-a58c-4750-a38f-d258faeaed3e" name="Changes" comment="Filtrering fungerer, mangler flere keywords">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filtering.js" beforeDir="false" afterPath="$PROJECT_DIR$/filtering.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scroll-detection-v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/scroll-detection-v2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-pos.js" beforeDir="false" afterPath="$PROJECT_DIR$/random-pos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
       <workItem from="1677605945197" duration="1009000" />
       <workItem from="1677857645392" duration="24885000" />
       <workItem from="1677928175003" duration="21580000" />
-      <workItem from="1678010626929" duration="17673000" />
+      <workItem from="1678010626929" duration="25319000" />
     </task>
     <task id="LOCAL-00001" summary="Oppdatert responsivitet, ting funker.">
       <created>1677870754069</created>
@@ -145,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678010678732</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Filtrering fungerer, mangler flere keywords">
+      <created>1678031443964</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678031443964</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +180,7 @@
     <MESSAGE value="alle knapper og submeny funker" />
     <MESSAGE value="la til funksjon shuffleAlbums og fjernet parseInt fra random-pos.js" />
     <MESSAGE value="more shit works" />
-    <option name="LAST_COMMIT_MESSAGE" value="more shit works" />
+    <MESSAGE value="Filtrering fungerer, mangler flere keywords" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filtrering fungerer, mangler flere keywords" />
   </component>
 </project>

@@ -12,6 +12,9 @@ function shuffleAlbums() {
     const albums = document.querySelectorAll('.album');
     const mainElement = document.getElementById("main");
 
+    albums.forEach(album => {
+        album.classList.add("album-transition")
+    })
     enquire.register("screen and (min-width:1000px)", {
         match: function () {
 
@@ -104,3 +107,8 @@ function shuffleAlbums() {
         }
     });
 }
+document.addEventListener('transitionend', function(event) {
+    if (event.target.classList.contains('album')) {
+        event.target.classList.remove('album-transition');
+    }
+});

@@ -4,13 +4,13 @@ dragElement(document.getElementById("bwp"));
 dragElement(document.getElementById("sots"));
 dragElement(document.getElementById("aja"));
 dragElement(document.getElementById("aph"));
-dragElement(document.getElementById("tpwbyt"));
-dragElement(document.getElementById("tmbte"));
+dragElement(document.getElementById("wtsv"));
 dragElement(document.getElementById("iab"));
 dragElement(document.getElementById("aen"));
 dragElement(document.getElementById("stl"));
 dragElement(document.getElementById("tgcd"));
 dragElement(document.getElementById("cla"));
+dragElement(document.getElementById("tpwbyt"));
 /*dragElement(document.getElementById("mydiv"));*/
 
 function dragElement(elmnt) {

@@ -2,9 +2,11 @@ const filterElements = document.querySelectorAll(".filter")
 const metal = document.querySelectorAll(".metal, .metal-off")
 const jazz = document.querySelectorAll(".jazz, .jazz-off")
 const rock = document.querySelectorAll(".rock, .rock-off")
+const other = document.querySelectorAll(".other, .other-off")
 const metalCB = document.getElementById("metal-cb")
 const jazzCB = document.getElementById("jazz-cb")
 const rockCB = document.getElementById("rock-cb")
+const otherCB = document.getElementById("other-cb")
 
 document.addEventListener("DOMContentLoaded", function () {
     filterMetal()
@@ -19,6 +21,9 @@ jazzCB.addEventListener("change", function () {
 })
 rockCB.addEventListener("change", function () {
     filterRock()
+})
+otherCB.addEventListener("change", function () {
+    filterOther()
 })
 
 function filterMetal() {
@@ -65,6 +70,20 @@ function filterRock() {
     }
     checkForFilters()
 }
+function filterOther() {
+    if (otherCB.checked === false) {
+        other.forEach(element => {
+            element.classList.remove("other")
+            element.classList.add("other-off")
+        })
+    } else if (otherCB.checked !== false) {
+        other.forEach(element => {
+            element.classList.add("other")
+            element.classList.remove("other-off")
+        })
+    }
+    checkForFilters()
+}
 
 // Loop through each element
 function checkForFilters() {
@@ -72,6 +91,7 @@ function checkForFilters() {
         // Check if element contains any or multiple of the classes "metal", "jazz" and "rock"
         if (element.classList.contains("metal") ||
             element.classList.contains("jazz") ||
+            element.classList.contains("other") ||
             element.classList.contains("rock")) {
             // console.log("Element contains class 'metal', 'jazz' or 'rock'");
             element.classList.add("album")

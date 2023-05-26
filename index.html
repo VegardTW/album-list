@@ -26,6 +26,11 @@
         <input id="rock-cb" class="checkbox" type="checkbox" checked="checked">
         <span class="checkmark"></span>
     </label>
+    <label class="button filter-list" id="other">
+        Other
+        <input id="other-cb" class="checkbox" type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
     <a class="button refresh closed-menu" onclick="reload()" id="refresh" title="Refresh page">Refresh</a>
     <svg onclick="allButtons()" class="button menu" id="menu-icon">
         <rect width="3rem" height="1rem"></rect>
@@ -59,7 +64,7 @@
                 <p class="album-description genre">Progressive death metal, progressive rock, progressive metal</p>
             </div>
         </div>
-        <div class="album filter rock" id="sots">
+        <div class="album filter other" id="sots">
             <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b19e45af5bea336820fe1bf3"
                  alt="album cover for Shadows of the Sun by Ulver">
             <div class="album-info">
@@ -71,7 +76,7 @@
                 <p class="album-description genre">Ambient, Electronic, Modern classical, Experimental</p>
             </div>
         </div>
-        <div class="album filter jazz" id="aja">
+        <div class="album filter jazz rock" id="aja">
             <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b0a4a1d7f138cbbcf252bf7b"
                  alt="album cover for Aja by Steely Dan">
             <div class="album-info">
@@ -108,7 +113,7 @@
                 <p class="album-description genre">Alternative metal, Post-metal, Progressive metal, Indie pop</p>
             </div>
         </div>
-        <div class="album filter rock" id="wtsv">
+        <div class="album filter rock metal" id="wtsv">
             <img class="album-cover"
                  src="https://i.scdn.co/image/ab67616d0000b2733ee0cb43203040fe0cad47ef"
                  alt="album cover for Welcome to Sky Valley by Kyuss">
@@ -118,7 +123,7 @@
                          alt="spotify logo"></a>
                 <h2 class="album-title">Welcome to Sky Valley</h2>
                 <p class="album-description">Genre:</p>
-                <p class="album-description">Stoner rock</p>
+                <p class="album-description">Stoner rock, stoner metal</p>
             </div>
         </div>
         <div class="album filter rock metal" id="iab">
@@ -181,7 +186,7 @@
                 <p class="album-description">Melodic death metal</p>
             </div>
         </div>
-        <div class="album filter rock" id="ded">
+        <div class="album filter other" id="ded">
             <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27319d85a472f328a6ed9b704cf"
                  alt="album cover for Demon Days by Gorillaz">
             <div class="album-info">
@@ -265,7 +270,7 @@
                 <p class="album-description">Progressive rock, Progressive pop</p>
             </div>
         </div>
-        <div class="album filter rock" id="coc">
+        <div class="album filter rock other" id="coc">
             <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273542eccdde77fb44412d09fa6"
                  alt="album cover for Casualties of Cool by Casualties of Cool">
             <div class="album-info">
@@ -358,7 +363,357 @@
                          alt="spotify logo"></a>
                 <h2 class="album-title">Applause of a Distant Crowd</h2>
                 <p class="album-description">Genre:</p>
-                <p class="album-description">Progressive metal, Dream pop, Progressive rock, Djent, Alternative metal</p>
+                <p class="album-description">Progressive metal, Dream pop, Progressive rock, Djent, Alternative
+                    metal</p>
+            </div>
+        </div>
+        <div class="album filter other" id="onj">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273412e18ab5452ac84eafe5c9d"
+                 alt="album cover for Oncle Jazz by Men I Trust">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Oncle Jazz</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Indie rock, Dream pop, Electropop</p>
+            </div>
+        </div>
+        <div class="album filter rock metal" id="soa">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273e0f9285954871808df42ca1b"
+                 alt="album cover for Sound Awake by Karnivool">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Sound Awake</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Progressive rock, Alternative rock, Progressive metal, Alternative
+                    metal</p>
+            </div>
+        </div>
+        <div class="album filter rock metal" id="tec">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2732780e610d8f9cf6becea7700"
+                 alt="album cover for Technatura by Vulkan">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Technatura</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Progressive metal, Progressive rock, Alternative rock</p>
+            </div>
+        </div>
+        <div class="album filter rock" id="plh">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2731a6f45f08fa7463cc49df01b"
+                 alt="album cover for Playing House by MEER">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Playing House</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Symphonic rock, Art rock, Progressive rock</p>
+            </div>
+        </div>
+        <div class="album filter Jazz" id="ali">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273603bd5d38b6746ae0d913202"
+                 alt="album cover for Alive by Hiromi">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Alive</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Jazz, Post-bop</p>
+            </div>
+        </div>
+        <div class="album filter Jazz other" id="atm">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2738128bf67b2c49ac3fdc72723"
+                 alt="album cover for Atmosphères by Tigran Hamasyan, Arve Henriksen, Eivind Aarset & Jan Bang">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Atmosphères</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Ambient, Jazz, Chamber music</p>
+            </div>
+        </div>
+        <div class="album filter Jazz other" id="moc">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273259a2f1f5ccc8e2bd97fbbec"
+                 alt="album cover for Mockroot by Tigran Hamasyan">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Mockroot</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Armenian folk music, Jazz fusion</p>
+            </div>
+        </div>
+        <div class="album filter Jazz" id="sdof">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2735bfb53f03fc4ef9fa3300b1c"
+                 alt="album cover for Seven Days of Falling by Esbjörn Svensson Trio">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Seven Days of Falling</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Jazz</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="sdam">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27351a9eaff2b77dd2e05c46dbf"
+                 alt="album cover for Souvenirs D'un Autre Monde by Alcest">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Souvenirs D'un Autre Monde</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Post-metal, Shoegaze, Post-rock, Black metal</p>
+            </div>
+        </div>
+        <div class="album filter jazz" id="ant">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2735d46b069ef33382b235b296a"
+                 alt="album cover for Antiphon by Alfa Mist">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Antiphon</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Nu Jazz, Jazz Fusion</p>
+            </div>
+        </div>
+        <div class="album filter jazz" id="coy">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2732eccc7fb3b3c2a1312418f5f"
+                 alt="album cover for Colour Yes by Matthew Halsall">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Colour Yes</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Jazz, Cool jazz</p>
+            </div>
+        </div>
+        <div class="album filter rock metal" id="dir">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2731cd131e5e9ad887ad8c1ecb7"
+                 alt="album cover for Dirt by Alice in Chains">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Dirt</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Grunge, Heavy metal, Alternative metal</p>
+            </div>
+        </div>
+        <div class="album filter rock jazz" id="cfp">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b0f39b11297dc844ed04c36a"
+                 alt="album cover for Cure for Pain by Morphine">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Cure for Pain</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Alternative rock, Jazz-rock</p>
+            </div>
+        </div>
+        <div class="album filter jazz" id="afwsfwf">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273152969cebc6dfe0fb756fe0f"
+                 alt="album cover for As Falls Wichita, So Falls Wichita Falls by Pat Metheny & Lyle Mays">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">As Falls Wichita, So Falls Wichita Falls</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Jazz, Jazz fusion</p>
+            </div>
+        </div>
+        <div class="album filter jazz" id="tcoc">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2739d7db0617013061b61eb2762"
+                 alt="album cover for The Colours of Chloë by Eberhard Weber">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">The Colours of Chloë</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Third stream, Chamber jazz, Jazz fusion</p>
+            </div>
+        </div>
+        <div class="album filter jazz" id="rtf">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2731c240ae01af9a9fe5cc5396a"
+                 alt="album cover for Return to Forever by Chick Corea">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Return to Forever</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Jazz fusion</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="hotn">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27330b7ab789a9e418f654c0e3e"
+                 alt="album cover for Hour of the Nightingale by Trees of Eternity">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Hour of the Nightingale</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Doom metal, Gothic metal</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="ark">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273b8afe8e513d5fb707c3fff58"
+                 alt="album cover for Arktis by Ihsahn">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Arktis</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Progressive metal, Black metal, Avant-garde metal</p>
+            </div>
+        </div>
+        <div class="album filter rock" id="pha">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27307c9f7a741699e11d7cf38af"
+                 alt="album cover for Pharos by Ihsahn">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Pharos</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Art rock, Progressive rock, Pop rock</p>
+            </div>
+        </div>
+        <div class="album filter rock" id="fub">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27364b9118ce2b537def052bb6d"
+                 alt="album cover for Funeral Beach by Blood Command">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Funeral Beach</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Post-Hardcore, Hardcore punk, Pop punk</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="poi">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2731bbe4aa8d8b32e061e6896f9"
+                 alt="album cover for Portal of I by Ne Obliviscaris">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Portal of I</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Extreme metal, Progressive metal</p>
+            </div>
+        </div>
+        <div class="album filter rock metal" id="drs">
+            <img class="album-cover" src="https://i.scdn.co/image/c9d1284a719ce2f9120cf446572863bd6c68bea0"
+                 alt="album cover for Dead Roots Stirring by Elder">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Dead Roots Stirring</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Stoner metal, Stoner rock, Psychedelic rock</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="bil">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2735160654757a95e953c390c81"
+                 alt="album cover for Bilateral by Leprous">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Bilateral</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Progressive metal, Alternative metal, Avant-garde metal</p>
+            </div>
+        </div>
+        <div class="album filter rock metal" id="lat">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273ca41a947c13b78749c4953b1"
+                 alt="album cover for Lateralus by Tool">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Bilateral</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Progressive metal, Progressive rock, Art rock</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="sim">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b27396263444e9ddab7605f01b93"
+                 alt="album cover for Silent Machine by Twelve Foot Ninja">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Silent Machine</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Alternative metal, Avant-garde metal, Funk metal, Djent</p>
+            </div>
+        </div>
+        <div class="album filter rock jazz" id="trtrts">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273957ae146a564181e7bbbfbd2"
+                 alt="album cover for The Raven That Refused to Sing (And Other Stories) by Steven Wilson">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">The Raven That Refused to Sing (And Other Stories)</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Progressive rock, Jazz fusion, Art rock</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="jor">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273ff754768fa04cf431ec57e45"
+                 alt="album cover for Jord by MØL">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Jord</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Blackgaze, Atmospheric black metal, Shoegaze</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="aatg">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b273e46eb11cdd11b9f821796aa5"
+                 alt="album cover for Ashes Against the Grain by Agalloch">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Ashes Against the Grain</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Post-metal, Folk metal, Black metal, Doom metal</p>
+            </div>
+        </div>
+        <div class="album filter metal" id="lef">
+            <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2732645ccba57dceaf3c646eef7"
+                 alt="album cover for Love Exchange Failure by White Ward">
+            <div class="album-info">
+                <a href="https://open.spotify.com/" class="spotify-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+                         alt="spotify logo"></a>
+                <h2 class="album-title">Love Exchange Failure</h2>
+                <p class="album-description">Genre:</p>
+                <p class="album-description">Blackgaze, Dark jazz, Post-metal</p>
             </div>
         </div>
     </div>

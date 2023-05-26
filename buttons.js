@@ -6,6 +6,7 @@ const openFilter = document.getElementById("filters");
 const openMetal = document.getElementById("metal");
 const openJazz = document.getElementById("jazz");
 const openRock = document.getElementById("rock");
+const openOther = document.getElementById("other");
 
 // function buttons() {
 //     document.body.scrollTop = 0; // For Safari
@@ -20,6 +21,7 @@ function toggleUnderline() {
     openMetal.classList.toggle("open-metal")
     openJazz.classList.toggle("open-jazz")
     openRock.classList.toggle("open-rock")
+    openOther.classList.toggle("open-other")
     document.getElementById("filters").classList.toggle("underline")
 }
 

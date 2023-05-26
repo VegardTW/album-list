@@ -148,10 +148,10 @@ Button/Animation stuff
     cursor: pointer;
 }
 
-.button:hover {
+/*.button:hover {
     fill: #d21d1d;
     color: #d21d1d;
-}
+}*/
 
 #menu-icon.menu:hover rect:nth-child(1) {
     transform: translateY(-0.2rem) rotate(5deg);
@@ -390,9 +390,12 @@ Button/Animation stuff
 }
 
 #rock {
-    transform: translateX(-5.1rem) translateY(0rem);
+    transform: translateX(-5.12rem) translateY(0rem);
 }
 
+#other {
+    transform: translateX(-4.8rem) translateY(0rem);
+}
 
 
 .filter-list.open-metal {
@@ -448,7 +451,27 @@ Button/Animation stuff
         opacity: 0.1;
     }
     100% {
-        transform: translateX(-5.1rem) translateY(7rem);
+        transform: translateX(-5.12rem) translateY(7rem);
+        opacity: 1;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}
+
+.filter-list.open-other {
+    animation: 0.4s ease forwards open-other;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open-other {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateX(-4.8rem) translateY(9rem);
         opacity: 1;
         cursor: pointer;
         pointer-events: auto;

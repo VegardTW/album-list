@@ -1,5 +1,5 @@
 html {
-    font-family: roboto, sans-serif;
+    font-family: articulat-cf, sans-serif;
     /*margin: 0;
     padding: 0;*/
     pointer-events: auto;
@@ -23,14 +23,26 @@ html {
 Default font stuff
  ============= */
 p {
+    font-family: courier-prime, monospace;
+    line-height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 0.8rem;
     max-font-size: 10vw;
+    hyphens: auto;
 }
 
 h2 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.3rem;
+    margin: 0.2rem 0 0.4rem 0;
+    font-size: 1.36rem;
+    line-height: 110%;
+}
+h3 {
+    margin: 0 0 0.7rem 0;
+    font-size: 1.05rem;
+    font-family: courier-prime, monospace;
+    font-weight: normal;
+    line-height: 110%;
 }
 
 /* ===========
@@ -60,7 +72,7 @@ header {
     display: flex;
     justify-content: left;
     align-content: end;
-    background: rgba(230, 230, 230, 0.3);
+    background: rgba(230, 230, 230, 0);
     opacity: 0.95;
     z-index: auto;
 }
@@ -84,7 +96,7 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
     width: 30vw;
-    max-width: 150px;
+    max-width: 174px;
     justify-content: flex-end;
     padding-bottom: 0.5rem;
 
@@ -213,7 +225,7 @@ Button/Animation stuff
     cursor: none;
     pointer-events: none;
     padding: 0 0.5rem 0 0.5rem;
-    margin: 1.6rem 0 0 0;
+    margin: 1.88rem 0 0 0;
     opacity: 0;
     transition: 0.4s ease;
     will-change: opacity, transform;
@@ -269,7 +281,7 @@ Button/Animation stuff
     cursor: none;
     pointer-events: none;
     padding: 0 0.5rem 0 0.5rem;
-    margin: 1.6rem 0 0 0;
+    margin: 1.88rem 0 0 0;
     opacity: 0;
     transition: 0.4s ease;
     will-change: opacity, transform;
@@ -326,7 +338,7 @@ Button/Animation stuff
 
 .checkmark {
     position: absolute;
-    top: 0.49rem;
+    top: 0.13rem;
     left: 0;
     height: 0.73rem;
     width: 0.73rem;
@@ -368,7 +380,7 @@ Button/Animation stuff
     display: block;
     top: 4vw;
     right: 4vw;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.7);
     cursor: none;
@@ -382,19 +394,19 @@ Button/Animation stuff
 }
 
 #metal {
-    transform: translateX(-4.68rem) translateY(0rem);
+    transform: translateX(-5.25rem) translateY(0rem);
 }
 
 #jazz {
-    transform: translateX(-5.305rem) translateY(0rem);
+    transform: translateX(-5.56rem) translateY(0rem);
 }
 
 #rock {
-    transform: translateX(-5.12rem) translateY(0rem);
+    transform: translateX(-5.5rem) translateY(0rem);
 }
 
 #other {
-    transform: translateX(-4.8rem) translateY(0rem);
+    transform: translateX(-5.12rem) translateY(0rem);
 }
 
 
@@ -411,7 +423,7 @@ Button/Animation stuff
         opacity: 0.1;
     }
     100% {
-        transform: translateX(-4.68rem) translateY(3rem);
+        transform: translateX(-5.25rem) translateY(3rem);
         opacity: 1;
         cursor: pointer;
         pointer-events: auto;
@@ -431,7 +443,7 @@ Button/Animation stuff
         opacity: 0.1;
     }
     100% {
-        transform: translateX(-5.305rem) translateY(5rem);
+        transform: translateX(-5.56rem) translateY(5rem);
         opacity: 1;
         cursor: pointer;
         pointer-events: auto;
@@ -451,7 +463,7 @@ Button/Animation stuff
         opacity: 0.1;
     }
     100% {
-        transform: translateX(-5.12rem) translateY(7rem);
+        transform: translateX(-5.5rem) translateY(7rem);
         opacity: 1;
         cursor: pointer;
         pointer-events: auto;
@@ -471,7 +483,7 @@ Button/Animation stuff
         opacity: 0.1;
     }
     100% {
-        transform: translateX(-4.8rem) translateY(9rem);
+        transform: translateX(-5.12rem) translateY(9rem);
         opacity: 1;
         cursor: pointer;
         pointer-events: auto;

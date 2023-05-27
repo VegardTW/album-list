@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b89453b-69a5-40eb-a4ba-d8f6067f4bf3" name="Changes" comment="La til flere album, mangler å oppdatere JS">
+    <list default="true" id="2b89453b-69a5-40eb-a4ba-d8f6067f4bf3" name="Changes" comment="Fyllt ut albumlista.&#10;Lagt til &quot;Other&quot;-filter.&#10;mangler artist-navn og tekststiler.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drag-on-hold.js" beforeDir="false" afterPath="$PROJECT_DIR$/drag-on-hold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filtering.js" beforeDir="false" afterPath="$PROJECT_DIR$/filtering.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -16,6 +13,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,7 +53,8 @@
       <workItem from="1678116364161" duration="6000" />
       <workItem from="1684584268392" duration="5390000" />
       <workItem from="1684661484952" duration="5463000" />
-      <workItem from="1685123211494" duration="11217000" />
+      <workItem from="1685123211494" duration="11975000" />
+      <workItem from="1685189171427" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="så på koden igjen, begynt å fikse smått">
       <created>1684619710738</created>
@@ -72,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684699411199</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fyllt ut albumlista.&#10;Lagt til &quot;Other&quot;-filter.&#10;mangler artist-navn og tekststiler.">
+      <created>1685138849164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685138849164</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +94,7 @@
     <MESSAGE value="La til transition animation på refresh. Filtere fungerer." />
     <MESSAGE value="så på koden igjen, begynt å fikse smått" />
     <MESSAGE value="La til flere album, mangler å oppdatere JS" />
-    <option name="LAST_COMMIT_MESSAGE" value="La til flere album, mangler å oppdatere JS" />
+    <MESSAGE value="Fyllt ut albumlista.&#10;Lagt til &quot;Other&quot;-filter.&#10;mangler artist-navn og tekststiler." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fyllt ut albumlista.&#10;Lagt til &quot;Other&quot;-filter.&#10;mangler artist-navn og tekststiler." />
   </component>
 </project>
